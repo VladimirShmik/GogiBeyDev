@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GogiBeyDev</title>
+</head>
+<link rel="stylesheet" href="./scss/bootstrap.min.css">
+<link rel="stylesheet" href="./scss/main.css">
+<body>
+<main class="main">
+    <div class="wrapper wrapper--no-bg">
+        <div class="container">
+            <div class="profile-wrapper">
+                <h1 class="profile-wrapper__title">Профиль</h1>
+                <div class="profile-block">
+                    <img src="./img/profile-img-2.jpg" alt="profile-img-2" class="profile-block__img">
+                    <button class="profile-block__button">
+                        <svg class="profile-block__icon">
+                            <use xlink:href="../img/sprite.svg#pen-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+                <form action="#" class="profile-form">
+                    <input type="text" class="profile-form__input" placeholder="Имя" disabled>
+                    <input type="text" class="profile-form__input" placeholder="ID441245942" disabled>
+                    <input type="text" class="profile-form__input" placeholder="Почта">
+                    <!--на disabled у кнопки уже накинуты классы, просто добавь когда условие сработает-->
+                    <button class="profile-form__button" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="/././js/toastify.js"></script>
+<script>
+    Toastify({
+        text: "Изменения сохранены",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "bottom",
+        position: "center",
+        className: "profile-popup",
+    }).showToast();
+</script>
+</body>
+</html>

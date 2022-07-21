@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GogiBeyDev</title>
+</head>
+<link rel="stylesheet" href="/././scss/bootstrap.min.css">
+<link rel="stylesheet" href="/././scss/main.css">
+<body>
+<main class="main">
+    <div class="wrapper wrapper--no-bg">
+        <div class="container">
+            <div class="tariffs-wrapper">
+                <h1 class="tariffs-wrapper__title">Оформить подписку</h1>
+                <div class="tariffs-container">
+                    <div class="tariffs-item tariffs-item--bg tariffs-item--after">
+                        <img src="/././img/icons/hands-icon.png" alt="hands-icon" class="tariff-container__img">
+                        <div class="tariffs-wrap">
+                            <div class="tariffs-block">
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__title">NEW</p>
+                                    <p class="tariffs-box__status">Доступен 1 раз</p>
+                                </div>
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__text">4 дня <span class="tariffs-box__span">&#183;</span>
+                                        потом 148 ₽</p>
+                                </div>
+                            </div>
+                            <p class="tariffs-block__price">1 ₽</p>
+                        </div>
+                    </div>
+                    <button type="button" class="tariffs-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                        <img src="/././img/icons/ok-icon.png" alt="ok-icon" class="tariff-container__img">
+                        <div class="tariffs-wrap">
+                            <div class="tariffs-block">
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__title">START</p>
+                                </div>
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__text">1 месяц</p>
+                                </div>
+                            </div>
+                            <p class="tariffs-block__price">128 ₽</p>
+                        </div>
+                    </button>
+                    <button type="button" class="tariffs-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        <img src="/././img/icons/cool-icon.png" alt="cool-icon-icon" class="tariff-container__img">
+                        <div class="tariffs-wrap">
+                            <div class="tariffs-block">
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__title">PRO</p>
+                                </div>
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__text">3 месяца</p>
+                                </div>
+                            </div>
+                            <p class="tariffs-block__price">338 ₽</p>
+                        </div>
+                    </button>
+                    <button type="button" class="tariffs-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                        <img src="/././img/icons/alien-icon.png" alt="alien-icon" class="tariff-container__img">
+                        <div class="tariffs-wrap">
+                            <div class="tariffs-block">
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__title">PRO+</p>
+                                </div>
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__text">6 месяцев</p>
+                                </div>
+                            </div>
+                            <p class="tariffs-block__price">660 ₽</p>
+                        </div>
+                    </button>
+                    <button type="button" class="tariffs-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                        <img src="/././img/icons/unicorn-icon.png" alt="unicorn-icon" class="tariff-container__img">
+                        <div class="tariffs-wrap">
+                            <div class="tariffs-block">
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__title">GOLD</p>
+                                </div>
+                                <div class="tariffs-box">
+                                    <p class="tariffs-box__text">12 месяцев</p>
+                                </div>
+                            </div>
+                            <p class="tariffs-block__price">1198 ₽</p>
+                        </div>
+                    </button>
+                    <!-- Modal-1 -->
+                    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-bottom">
+                            <div class="modal-content tariffs-content">
+                                <div class="modal-header tariffs-header">
+                                    <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+                                </div>
+                                <div class="modal-body tariffs-body">
+                                    <p class="tariffs-body__question">?</p>
+                                    <h2 class="tariffs-body__title">Вы действительно хотите поменять тариф на START?</h2>
+                                    <button class="tariffs-body__button">Да, поменять</button>
+                                    <button class="tariffs-body__close" type="button"  data-bs-dismiss="modal" aria-label="Close">Нет, оставить NEW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal-2 -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-bottom">
+                            <div class="modal-content tariffs-content">
+                                <div class="modal-header tariffs-header">
+                                    <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+                                </div>
+                                <div class="modal-body tariffs-body">
+                                    <p class="tariffs-body__question">?</p>
+                                    <h2 class="tariffs-body__title">Вы действительно хотите поменять тариф на PRO?</h2>
+                                    <button class="tariffs-body__button">Да, поменять</button>
+                                    <button class="tariffs-body__close" type="button"  data-bs-dismiss="modal" aria-label="Close">Нет, оставить NEW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal-3 -->
+                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-bottom">
+                            <div class="modal-content tariffs-content">
+                                <div class="modal-header tariffs-header">
+                                    <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+                                </div>
+                                <div class="modal-body tariffs-body">
+                                    <p class="tariffs-body__question">?</p>
+                                    <h2 class="tariffs-body__title">Вы действительно хотите поменять тариф на PRO+?</h2>
+                                    <button class="tariffs-body__button">Да, поменять</button>
+                                    <button class="tariffs-body__close" type="button"  data-bs-dismiss="modal" aria-label="Close">Нет, оставить NEW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal-4 -->
+                    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-bottom">
+                            <div class="modal-content tariffs-content">
+                                <div class="modal-header tariffs-header">
+                                    <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+                                </div>
+                                <div class="modal-body tariffs-body">
+                                    <p class="tariffs-body__question">?</p>
+                                    <h2 class="tariffs-body__title">Вы действительно хотите поменять тариф на GOLD?</h2>
+                                    <button class="tariffs-body__button">Да, поменять</button>
+                                    <button class="tariffs-body__close" type="button"  data-bs-dismiss="modal" aria-label="Close">Нет, оставить NEW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/././js/popper.min.js"></script>
+<script src="/././js/bootstrap.min.js"></script>
+<script src="/././js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GogiBeyDev</title>
+</head>
+<link rel="stylesheet" href="/././scss/bootstrap.min.css">
+<link rel="stylesheet" href="/././scss/main.css">
+<body>
+<main class="main">
+    <div class="wrapper wrapper--subs">
+        <div class="container">
+            <div class="subs-wrapper">
+                <div class="subs-block">
+                    <img src="/././img/profile-img-2.jpg" alt="profile-img-2" class="subs-block__img">
+                    <h1 class="subs-block__title">Матвей Сагадеев</h1>
+                </div>
+                <nav class="subs-nav">
+                    <li class="subs-nav__item">
+                        <a href="#" class="subs-link">
+                            <div class="subs-icon">
+                                <svg class="subs-icon__icon subs-icon__icon--1">
+                                    <use xlink:href="/././img/sprite.svg#subs-pen"></use>
+                                </svg>
+                            </div>
+                            <p class="subs-link__text">Изменить данные</p>
+                        </a>
+                    </li>
+                    <li class="subs-nav__item">
+                        <a href="#" class="subs-link">
+                            <div class="subs-icon">
+                                <svg class="subs-icon__icon subs-icon__icon--2">
+                                    <use xlink:href="/././img/sprite.svg#subs-star"></use>
+                                </svg>
+                            </div>
+                            <p class="subs-link__text">Управление подпиской</p>
+                        </a>
+                    </li>
+                    <li class="subs-nav__item">
+                        <a href="#" class="subs-link">
+                            <div class="subs-icon">
+                                <svg class="subs-icon__icon subs-icon__icon--3">
+                                    <use xlink:href="/././img/sprite.svg#subs-clock"></use>
+                                </svg>
+                            </div>
+                            <p class="subs-link__text">История поиска</p>
+                        </a>
+                    </li>
+                    <li class="subs-nav__item">
+                        <a href="#" class="subs-link">
+                            <div class="subs-icon">
+                                <svg class="subs-icon__icon subs-icon__icon--4">
+                                    <use xlink:href="/././img/sprite.svg#subs-fav"></use>
+                                </svg>
+                            </div>
+                            <p class="subs-link__text">Избранное</p>
+                        </a>
+                    </li>
+                    <li class="subs-nav__item">
+                        <a href="#" class="subs-link">
+                            <div class="subs-icon">
+                                <svg class="subs-icon__icon subs-icon__icon--5">
+                                    <use xlink:href="/././img/sprite.svg#subs-doc"></use>
+                                </svg>
+                            </div>
+                            <p class="subs-link__text">Документы</p>
+                        </a>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="/././js/popper.min.js"></script>
+<script src="/././js/bootstrap.min.js"></script>
+<script src="/././js/index.js"></script>
+<script src="/././js/toastify.js"></script>
+<script>
+    Toastify({
+        text: "Подписка успешно оформлена на 12 месяцев за 459₽",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "bottom",
+        position: "center",
+        className: "profile-popup",
+    }).showToast();
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.documents-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+&__title{
+  margin-bottom: 20px;
+
+}
+}
+.documents-nav{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.documents-item{
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  &__text{
+    font-weight: 500;
+    font-size: 13.4579px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: $black;
+  }
+}
+.documents-bg{
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 13.4579px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__icon{
+    width: 14px;
+    height: 17px;
+    fill: $white;
+  }
+}
+.documents-popup{
+  position: absolute;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  &__text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: $text;
+    opacity: 0.5;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.documents-body{
+  &__title{
+    margin-bottom: 15px;
+  }
+  &__text{
+    max-height: 420px;
+    overflow: scroll;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: $text;
+    margin-bottom: 10px;
+  }
+  &__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 11px 0;
+    background: #E1E2E2;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: $blue;
+  }
+}

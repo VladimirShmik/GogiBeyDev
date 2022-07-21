@@ -1,0 +1,180 @@
+.tariffs-wrapper{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  &__title{
+    margin-bottom: 20px;
+  }
+}
+.tariffs-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tariffs-item{
+  background: linear-gradient(103.07deg, #E6EFFA 0%, rgba(230, 239, 250, 0) 100%);
+  border: 0.841121px solid #E6EFFA;
+  border-radius: 20.1869px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 21px 18px 15px;
+  position: relative;
+  &--bg{
+    background: linear-gradient(92.98deg, #007AFF 0.84%, #BE95FF 106.48%);
+    border: 0.841121px solid #E6EFFA;
+    .tariffs-block__price{
+      color: $white;
+    }
+    .tariffs-box__title{
+      color: $white;
+    }
+    .tariffs-box__text{
+      color: $white;
+    }
+    .tariffs-box__status{
+      color: $black;
+      background-color:$white ;
+    }
+  }
+  &--after{
+    &::after{
+      position: absolute;
+      content: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M72.7139 107.084C98.4862 100.186 113.952 73.3329 107.04 47.5647C100.139 21.8408 73.2587 6.32144 47.5309 13.2073C21.7587 20.105 6.29262 46.958 13.1932 72.6819C20.1057 98.4501 46.9861 113.97 72.7139 107.084ZM53.9729 86.5764C51.6686 89.5264 47.9417 88.2382 48.1999 84.4073L49.1461 68.5831L34.2968 62.9385C31.231 61.8068 30.7923 57.6862 34.5812 56.7197L49.9589 52.7945L50.6916 36.8845C50.8729 33.1218 54.561 32.1347 56.6014 35.3028L65.2445 48.7034L80.5269 44.4228C84.3808 43.3437 85.8978 47.2233 83.8862 49.6664L73.8399 61.9263L82.5925 75.2024C84.7695 78.5244 82.139 81.3237 78.6787 79.9641L63.9064 74.2514L53.9729 86.5764Z' fill='white'/%3E%3C/svg%3E");
+      left: 121px;
+      top: -8px;
+    }
+
+  }
+}
+.tariffs-wrap{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.tariffs-block{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  &__price{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: $text;
+  }
+}
+.tariffs-box{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  &__title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 120%;
+    color: $text;
+  }
+  &__text{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: $text;
+    display: flex;
+    gap: 6px;
+  }
+  &__span{
+    font-size: 24px;
+    opacity: 0.5;
+    color: $white;
+  }
+  &__status{
+    background: #1D7D2C;
+    border-radius: 20.1869px;
+    padding: 4px 12px;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: -0.03em;
+    color: $white;
+  }
+}
+.modal-dialog-bottom{
+  display: flex;
+  align-items: flex-end;
+  min-height: calc(90% - var(--bs-modal-margin) * 2);
+}
+.tariffs-header{
+  border-bottom: none;
+  padding: 20px;
+}
+.tariffs-btn{
+  width: 10px;
+  height: 10px;
+  background-color: $grey;
+  padding: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  border-radius: 50%;
+  background-image: none;
+
+}
+.tariffs-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  &__question{
+    font-weight: 450;
+    font-size: 41px;
+    line-height: 140%;
+    width: 62px;
+    height: 62px;
+    border: 4px solid $text;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.02em;
+    color: #0C2137;
+    margin-bottom: 20px;
+  }
+  &__title{
+    max-width: 265px;
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+  &__button{
+    background: $blue;
+    padding: 13px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: $white;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  &__close{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: $text;
+    background-color: transparent;
+    opacity: 0.25;
+  }
+
+}
+.tariffs-content{
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+}
