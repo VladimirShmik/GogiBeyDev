@@ -1381,10 +1381,24 @@ h4 {
 .history-block--alert .history-block__text {
   color: #FF3B30;
 }
+.history-block__bg {
+  background: #0C2137;
+  width: 75px;
+  height: 75px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .history-block__icon {
   width: 18px;
   height: 19px;
   fill: #0C2137;
+}
+.history-block__icon--2 {
+  width: 37px;
+  height: 31px;
+  fill: #E6EFFA;
 }
 .history-block__text {
   font-weight: 400;
