@@ -3,10 +3,15 @@
   height: 100%;
   &--width{
  overflow: visible;
-    width: 300px;
+
   }
 }
-
+body{
+  overflow-x: hidden;
+}
+.mb-70{
+  margin-bottom: 70px;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
