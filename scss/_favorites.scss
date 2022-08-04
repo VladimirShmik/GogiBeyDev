@@ -20,6 +20,9 @@
   border-radius: 20px;
   padding: 16px;
   border: 0.84px solid rgba(230, 239, 250, 1);
+  &:last-child{
+    margin-bottom: 30px;
+  }
   &__img{
     width: 80px;
     height: 80px;

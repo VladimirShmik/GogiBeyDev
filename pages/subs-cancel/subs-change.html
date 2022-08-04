@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GogiBeyDev</title>
 </head>
+<link rel="stylesheet" href="/././scss/bootstrap.min.css">
+<link rel="stylesheet" href="/././scss/swiper-bundle.css">
 <link rel="stylesheet" href="/././scss/main.css">
 <body>
 <main class="main">
@@ -15,7 +17,8 @@
             <div class="change-wrapper">
                 <div class="change-block">
                     <img src="/././img/icons/heart-icon.png" alt="heart-icon" class="change-block__img">
-                    <h1 class="change-block__title">Подписка действует еще <span class="change-block__span">20 дней</span></h1>
+                    <h1 class="change-block__title">Подписка действует еще <span
+                            class="change-block__span">20 дней</span></h1>
                     <p class="change-block__tariff">Тариф: NEW</p>
                     <div class="change-line">
                         <p class="change-line__text">Оформлен</p>
@@ -23,12 +26,120 @@
                     </div>
                     <p class="change-block__bold">55₽ спишутся 19 июля</p>
                     <button class="change-block__edit">Изменить тариф</button>
-                    <button class="change-block__cancel">Отключить подписку</button>
+                    <button type="button" class="change-block__cancel" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop1">
+                        Отключить подписку
+                    </button>
                 </div>
             </div>
         </div>
+        <!-- unsubscribe-1 -->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-bottom">
+                <div class="modal-content tariffs-content">
+                    <div class="modal-header tariffs-header">
+                        <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &#10006;
+                        </button>
+                    </div>
+                    <div class="modal-body tariffs-body">
+                        <p class="tariffs-body__alert">!</p>
+                        <div class="tariffs-body__alert-text">Внимание</div>
+                        <p class="tariffs-body__text">При отключении подписки,
+                            оставшиеся <span class="tariffs-body__bold">12 дней</span> по тарифу автоматически <span
+                                    class="tariffs-body__bold">сгорают</span></p>
+                        <button class="tariffs-body__button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                            Сохранить подписку
+                        </button>
+                        <button class="change-block__cancel" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                            Отключить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- unsubscribe-2 -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-bottom">
+                <div class="modal-content tariffs-content">
+                    <div class="modal-header tariffs-header">
+                        <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &#10006;
+                        </button>
+                    </div>
+                    <div class="modal-body tariffs-body">
+                        <p class="tariffs-body__alert">!</p>
+                        <div class="tariffs-body__alert-text mb-4">Вы действительно хотите отключить подписку GoGiBey?
+                        </div>
+                        <button class="tariffs-body__button tariffs-body__button--red" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop3">Да, отключить
+                        </button>
+                        <button class="change-block__cancel" data-bs-dismiss="modal" aria-label="Close">Нет, сохранить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- unsubscribe-3 -->
+        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-bottom">
+                <div class="modal-content tariffs-content">
+                    <div class="modal-header tariffs-header">
+                        <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &#10006;
+                        </button>
+                    </div>
+                    <div class="modal-body tariffs-body">
+                        <svg class="tariffs-body__heart">
+                            <use xlink:href="/././img/sprite.svg#heart-icon"></use>
+                        </svg>
+                        <div class="tariffs-body__alert-text">Подписка отключена</div>
+                        <p class="tariffs-body__subtitle">Спасибо, что были с нами</p>
+                        <button class="tariffs-body__button" data-bs-dismiss="modal" aria-label="Close">Продолжить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- subscribe-1 -->
+        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-bottom">
+                <div class="modal-content tariffs-content">
+                    <div class="modal-header tariffs-header">
+                        <button type="button" class="btn-close tariffs-btn" data-bs-dismiss="modal" aria-label="Close">
+                            &#10006;
+                        </button>
+                    </div>
+                    <div class="modal-body tariffs-body">
+                        <div class="icon-box">
+                            <svg class="icon-box__icon">
+                                <use xlink:href="/././img/sprite.svg#heart-2-icon"></use>
+                            </svg>
+                            <svg class="icon-box__icon icon-box__icon--2">
+                                <use xlink:href="/././img/sprite.svg#rabbit-icon"></use>
+                            </svg>
+                            <svg class="icon-box__icon">
+                                <use xlink:href="/././img/sprite.svg#heart-2-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="tariffs-body__alert-text">Подписка сохранена</div>
+                        <p class="tariffs-body__subtitle">Спасибо, что остались с нами!</p>
+                        <button class="tariffs-body__button" data-bs-dismiss="modal" aria-label="Close">Продолжить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </main>
+<script src="/././js/bootstrap.bundle.min.js"></script>
+<script src="/././js/swiper-bundle.min.js"></script>
+<script src="/././js/toastify.js"></script>
 <script src="/././js/index.js"></script>
 </body>
 </html>

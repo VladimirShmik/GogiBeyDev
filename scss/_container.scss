@@ -27,4 +27,25 @@
   &--bg--2{
     background-image: url("../img/bg/wrapper-bg--2.png");
   }
+  &--screen{
+    &::after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    right: -20px;
+    top: 35px;
+    background: #CDE5FF;
+    opacity: 0.75;
+    filter: blur(67.2897px);
+    }
+  }
+}
+.main{
+  width: 100%;
+  height: 100vh;
+}
+.main-normal{
+  width: 100%;
+  height: auto;
 }
