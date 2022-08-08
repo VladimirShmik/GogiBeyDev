@@ -20,6 +20,7 @@
   gap: 16px;
   padding: 16px 21px 18px 15px;
   position: relative;
+  overflow: hidden;
   &--bg{
     background: linear-gradient(92.98deg, #007AFF 0.84%, #BE95FF 106.48%);
     border: 0.841121px solid #E6EFFA;
@@ -44,7 +45,37 @@
       left: 121px;
       top: -8px;
     }
-
+  }
+  &__gradient{
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    background: linear-gradient(270deg, #FF0255 0%, #0088CE 85.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  &--spb{
+    border: 1px solid #0089CF;
+    backdrop-filter: blur(8.41536px);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
+.tariffs-logo{
+  display: flex;
+  align-items: center;
+  &__img{
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+  }
+  &__text{
+    font-weight: 700;
+    font-size: 12px;
+    color:  #000000;
   }
 }
 .tariffs-wrap{

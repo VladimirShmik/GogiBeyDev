@@ -44,6 +44,16 @@ let searchContainer = document.querySelector('.search-content');
         };
     };
 };
+//search-icons//
+let shareWrapper = document.querySelector('.share-buttons');
+if (shareWrapper != null) {
+    shareWrapper.addEventListener('click', shareContainer);
+    function shareContainer(event) {
+        if (event.target.closest('.share-fav')) {
+            event.target.classList.toggle('share-fav--active');
+        };
+    };
+};
 
 let foundContainer = document.querySelector('.bottom-container');
 let foundBtn = document.querySelector('.film-except__btn');
@@ -58,15 +68,3 @@ if (foundContainer != null) {
         };
     };
 };
-let sliderContainer = document.querySelector('.slider-box');
-let sliderDropdown = document.querySelector('.slider-dropdown');
-let mouseDownTime = 0 ;
-const clickTime = 1000;
-sliderContainer.addEventListener('mousedown', () =>{
-    mouseDownTime = Date.now();
-})
-sliderContainer.addEventListener('click', (event) => {
-    if(Date.now() - mouseDownTime < clickTime) {
-        sliderDropdown.classList.toggle('slider-dropdown--active')
-    }
-});

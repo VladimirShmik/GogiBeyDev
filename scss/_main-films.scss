@@ -48,7 +48,7 @@
 
 .buttons-group{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 16px;
   &__btn{
@@ -254,7 +254,7 @@
 .share-buttons{
   display: grid;
   align-items: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr auto;
   grid-column-gap: 10px;
   width: 100%;
   margin-bottom: 15px;
@@ -295,10 +295,24 @@
   background: #717579;
   border-radius: 13.4579px;
   padding: 11px 17px;
-  &__icon{
-    width: 16px;
-    height: 18px;
-    fill: white;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  &::after {
+    position: absolute;
+    left: 32%;
+    top: 13px;
+    content: url("data:image/svg+xml,%3Csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.5' d='M1.22258 13.2769C1.55608 13.2769 1.77457 13.1102 2.25181 12.6445L4.44825 10.4595C4.477 10.4365 4.523 10.4365 4.55175 10.4595L6.74819 12.6445C7.23118 13.1102 7.43818 13.2769 7.77742 13.2769C8.28915 13.2769 8.61115 12.9205 8.61115 12.357V2.28897C8.61115 1.116 7.97866 0.477768 6.81719 0.477768H2.18281C1.02134 0.477768 0.388855 1.116 0.388855 2.28897V12.357C0.388855 12.9205 0.716596 13.2769 1.22258 13.2769ZM1.82632 11.1725C1.75157 11.2415 1.65957 11.2185 1.65957 11.1092V2.39247C1.65957 1.96123 1.87232 1.75424 2.30356 1.75424H6.69644C7.12768 1.75424 7.34043 1.96123 7.34043 2.39247V11.1092C7.34043 11.2185 7.25418 11.2415 7.17368 11.1725L4.93124 8.9933C4.6495 8.72306 4.3505 8.72306 4.06876 8.9933L1.82632 11.1725Z' fill='white'/%3E%3C/svg%3E");
+    width: 15px;
+    height: 19px;
+  }
+  &--active {
+    &::after {
+      position: absolute;
+      content: url("data:image/svg+xml,%3Csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22258 13.2769C1.55608 13.2769 1.77457 13.1102 2.25181 12.6445L4.44825 10.4595C4.477 10.4365 4.523 10.4365 4.55175 10.4595L6.74819 12.6445C7.23118 13.1102 7.43818 13.2769 7.77742 13.2769C8.28915 13.2769 8.61115 12.9205 8.61115 12.357V2.28897C8.61115 1.116 7.97866 0.477768 6.81719 0.477768H2.18281C1.02134 0.477768 0.388855 1.116 0.388855 2.28897V12.357C0.388855 12.9205 0.716596 13.2769 1.22258 13.2769Z' fill='white'/%3E%3C/svg%3E%0A");
+      width: 15px;
+      height: 19px;
+    }
   }
 }
 .film-except{
@@ -555,6 +569,11 @@
   grid-area: main;
   width: 100%;
   display: grid;
+  padding: 30px 20px;
+  overflow-x: scroll;
+  p{
+    color: $text;
+  }
 }
 .results-footer{
   grid-area: footer;
