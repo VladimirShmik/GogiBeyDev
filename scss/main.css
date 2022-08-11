@@ -989,9 +989,10 @@ h4 {
 .main-container__subtitle {
   font-weight: 400;
   font-size: 9px;
+  line-height: 100%;
   color: #000000;
   opacity: 0.5;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 .main-container .swiper-pagination-bullet {
   width: 5px;
@@ -1048,7 +1049,7 @@ h4 {
   background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(8.41536px);
   border-radius: 30px;
-  padding: 20px 16px 15px;
+  padding: 20px 0 20px;
   width: calc(360px - 2rem);
 }
 .slider-container--margin {
@@ -1089,28 +1090,36 @@ h4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4px;
-  padding-bottom: 40px;
+  padding: 20px 16px 20px;
 }
 
-.slider-block {
+.slider-link {
   width: 71px;
   height: 71px;
+  display: block;
+  filter: drop-shadow(1px 4px 4px rgba(12, 33, 55, 0.3));
+  border-radius: 20px;
   position: relative;
   z-index: -1;
 }
-.slider-block::after {
+.slider-link__img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.slider-link::after {
   content: none;
 }
-.slider-block__icon {
+.slider-link__icon {
   width: 9px;
   height: 9px;
   fill: #F5FAFF;
 }
-.slider-block__img {
+.slider-link__img {
   filter: drop-shadow(1px 4px 9px rgba(12, 33, 55, 0.3));
   border-radius: 20px;
 }
-.slider-block__span {
+.slider-link__span {
   position: absolute;
   width: 40px;
   display: flex;
@@ -1128,42 +1137,15 @@ h4 {
   left: 15px;
   border-radius: 10.0935px;
 }
-.slider-block__span--first {
+.slider-link__span--first {
   gap: 2px;
   background: linear-gradient(92.98deg, #007AFF 0.84%, #BE95FF 106.48%);
 }
-.slider-block__span--second {
+.slider-link__span--second {
   background: #0C2137;
 }
-.slider-block__span--third {
+.slider-link__span--third {
   background: #7D8C9B;
-}
-
-.slider-block {
-  position: relative;
-  z-index: 1;
-}
-
-.slider-link {
-  width: 71px;
-  height: 71px;
-  display: block;
-  filter: drop-shadow(1px 4px 1px rgba(12, 33, 55, 0.3));
-  border-radius: 20px;
-}
-.slider-link::before {
-  position: absolute;
-  content: "";
-  background-color: transparent;
-  width: 71px;
-  height: 71px;
-  border-radius: 20px;
-  left: 0;
-}
-.slider-link__img {
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
 }
 
 .slider-dropdown {
@@ -1221,11 +1203,6 @@ h4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 6px;
-}
-
-.body--fade {
-  background: rgba(12, 33, 55, 0.1);
-  backdrop-filter: blur(21.028px);
 }
 
 .profile-wrapper {

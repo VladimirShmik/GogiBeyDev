@@ -71,54 +71,54 @@ if (foundContainer != null) {
         };
     };
 };
-const sliderBlock = document.querySelectorAll('.slider-block');
-
-sliderBlock.forEach(el => {
-    const
-        link = el.querySelector('.slider-link'),
-        ddwn = el.querySelector('.slider-dropdown'),
-        bodyFade = el.querySelector('body'),
-        href = link.href;
-    link.addEventListener('mousedown', () => {
-        action.setup(ddwn)
-    })
-    link.addEventListener('mouseup', () => {
-        action.cancel(ddwn)
-        if (action.stoping && typeof action.timeoutID === 'number') {
-            action.goLink(href)
-        }
-    })
-})
-
-const action = {
-    remind(goToLink, dwn, href, bodyFade) {
-        if (goToLink) {
-            window.location.href = href
-        } else {
-            dwn.classList.add('slider-dropdown--active')
-            bodyFade.classList.add
-        }
-        this.timeoutID = undefined;
-        this.stoping = false;
-    },
-
-    setup(dwn, href) {
-        if (typeof this.timeoutID === 'number') {
-            this.remind(true, false, href);
-        }
-
-        this.timeoutID = setTimeout((timeoutID) => {
-            this.remind(false, dwn);
-        }, 2000, 'false');
-    },
-
-    goLink(href) {
-        this.remind(true, false, href);
-    },
-
-    cancel(dwn) {
-        clearTimeout(this.timeoutID);
-        dwn.classList.remove('slider-dropdown--active')
-        this.stoping = true;
-    }
-};
+// const sliderBlock = document.querySelectorAll('.slider-block');
+//
+// sliderBlock.forEach(el => {
+//     const
+//         link = el.querySelector('.slider-link'),
+//         ddwn = el.querySelector('.slider-dropdown'),
+//         bodyFade = el.querySelector('body'),
+//         href = link.href;
+//     link.addEventListener('mousedown', () => {
+//         action.setup(ddwn)
+//     })
+//     link.addEventListener('mouseup', () => {
+//         action.cancel(ddwn)
+//         if (action.stoping && typeof action.timeoutID === 'number') {
+//             action.goLink(href)
+//         }
+//     })
+// })
+//
+// const action = {
+//     remind(goToLink, dwn, href, bodyFade) {
+//         if (goToLink) {
+//             window.location.href = href
+//         } else {
+//             dwn.classList.add('slider-dropdown--active')
+//             bodyFade.classList.add
+//         }
+//         this.timeoutID = undefined;
+//         this.stoping = false;
+//     },
+//
+//     setup(dwn, href) {
+//         if (typeof this.timeoutID === 'number') {
+//             this.remind(true, false, href);
+//         }
+//
+//         this.timeoutID = setTimeout((timeoutID) => {
+//             this.remind(false, dwn);
+//         }, 2000, 'false');
+//     },
+//
+//     goLink(href) {
+//         this.remind(true, false, href);
+//     },
+//
+//     cancel(dwn) {
+//         clearTimeout(this.timeoutID);
+//         dwn.classList.remove('slider-dropdown--active')
+//         this.stoping = true;
+//     }
+// };
