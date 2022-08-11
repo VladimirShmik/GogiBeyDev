@@ -67,14 +67,13 @@
   display: flex;
   align-items: center;
   &__span{
-    padding: 1px 4px;
+    padding: 2px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     font-weight: 600;
     font-size: 12px;
-    line-height: 130%;
     letter-spacing: -0.02em;
     margin-right: 5px;
 
@@ -198,7 +197,6 @@
     &__text{
       font-weight: 400;
       font-size: 10px;
-      line-height: 130%;
       color: $text;
       opacity: 0.5;
       &--viewed{
@@ -206,3 +204,77 @@
       }
     }
   }
+@media (min-width: 320px) and (max-width: 359px) {
+  .favorites-wrapper{
+    margin-top: 15px;
+    &__title{
+      font-size: 25px;
+      line-height: 130%;
+      margin-bottom: 15px;
+    }
+  }
+  .favorites-wrap{
+    grid-gap: 15px;
+    padding: 14px;
+    &:last-child{
+      margin-bottom: 30px;
+    }
+    &__img{
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .rating-wrap{
+    &__icon{
+      width: 14px;
+      height: 16px;
+      fill: $text;
+      opacity: 0.25;
+    }
+  }
+  .rating-box{
+    &__span{
+      font-size: 9px;
+      line-height: 130%;
+
+      &--green{
+        color: #32D74B;
+        border: 1px solid #32D74B;
+      }
+      &--yellow{
+        color: #FF9500;
+        border: 1px solid #FF9500;
+      }
+    }
+    &__text{
+      font-size: 9px;
+      line-height: 130%;
+    }
+  }
+  .rating-column{
+    &__title{
+      font-size: 13px;
+      line-height: 120%;
+    }
+    &__subtitle{
+      font-size: 13px;
+      line-height: 120%;
+      &--viewed{
+        .rating-column__icon{
+          line-height: 120%;
+        }
+      }
+    }
+  }
+  .rating-row {
+    &__text {
+      font-size: 9px;
+      line-height: 130%;
+    }
+
+    &__span {
+      font-size: 20px;
+    }
+  }
+}

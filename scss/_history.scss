@@ -65,3 +65,35 @@
     object-fit: cover;
   }
 }
+@media (min-width: 320px) and (max-width: 359px) {
+  .history-wrapper{
+    margin-top: 15px;
+    &__title{
+      font-size: 25px;
+      line-height: 130%;
+      margin-bottom: 16px;
+    }
+  }
+  .history-block{
+    &__bg{
+      width: 65px;
+      height: 65px;
+    }
+    &__icon{
+      width: 16px;
+      height: 16px;
+      &--2{
+        width: 32px;
+        height: 27px;
+      }
+    }
+    &__text{
+      font-size: 11px;
+      line-height: 140%;
+    }
+    &__img{
+      width: 65px;
+      height: 65px;
+    }
+  }
+}

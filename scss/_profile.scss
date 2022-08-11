@@ -19,23 +19,6 @@
       width: 100%;
       border-radius: 50%;
     }
-    &__button{
-      border: none;
-      position: absolute;
-      background: #00000070;
-      display: block;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 18px;
-    }
-    &__icon{
-      width: 13px;
-      height: 13px;
-      fill: white;
-      position: relative;
-      z-index: 2;
-    }
   }
   .profile-form{
     display: grid;
@@ -142,4 +125,95 @@
      fill: #FFFFFF;
    }
  }
+@media (min-width: 320px) and (max-width: 359px){
+  .profile-wrapper{
+    margin-top: 15px;
+    &__title{
+      font-size: 25px;
+      line-height: 130%;
+      margin-bottom: 15px;
+    }
+  }
+  .profile-block{
+    height: 75px;
+    width: 75px;
+    margin-bottom: 15px;
+    &__img{
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  .profile-form{
+    &__input{
+      padding: 11px 14px;
+      &::placeholder{
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 140%;
+      }
+      &:disabled{
+        padding: 11px 14px;
+      }
+    }
+    &__button{
+      font-size: 12px;
+      padding: 10px 0;
+      margin-top: 8px;
+      &:disabled{
+        background: #EBEBEB;
+      }
+    }
+  }
+  .profile-label{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .check-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+    &__title{
+      margin-bottom: 20px;
+    }
+  }
+  .check-wrap{
+    display: grid;
+    grid-row-gap: 10px;
+  }
+  .check-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(8.41536px);
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    &__text{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 135%;
+      letter-spacing: -0.03em;
+      color: #000000;
+    }
+  }
+  .check-button{
+    background: #363738;
+    opacity: 0.5;
+    backdrop-filter: blur(20.1869px);
+    border-radius: 13.4579px;
+    padding: 6.5px 12.5px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    &__icon{
+      width: 22px;
+      height: 19px;
+      fill: #FFFFFF;
+    }
+  }
+}
 
