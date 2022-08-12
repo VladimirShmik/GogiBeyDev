@@ -136,6 +136,9 @@
   height: 100vh;
   overflow-x: hidden;
 }
+ html, body{
+  overflow-x: hidden;
+}
 .main-normal{
   width: 100%;
   height: auto;

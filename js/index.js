@@ -71,6 +71,18 @@ if (foundContainer != null) {
         };
     };
 };
+const modalContainer3 = document.getElementById("customModal3");
+const modal3 = new bootstrap.Modal(modalContainer3);
+
+document.getElementById("customModalButton3").addEventListener("click", function () {
+    modal3.hide();
+});
+const modalContainer4 = document.getElementById("customModal4");
+const modal4 = new bootstrap.Modal(modalContainer4);
+
+document.getElementById("customModalButton4").addEventListener("click", function () {
+    modal4.hide();
+});
 // const sliderBlock = document.querySelectorAll('.slider-block');
 //
 // sliderBlock.forEach(el => {

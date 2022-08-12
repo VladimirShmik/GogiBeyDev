@@ -1,7 +1,7 @@
 .documents-wrapper{
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 35px;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -20,7 +20,7 @@
   backdrop-filter: blur(7.48032px);
   border: 2px solid #FFFFFF;
   border-radius: 16px;
-  padding: 8px;
+  padding: 6.5px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -113,10 +113,6 @@
     }
   }
   .documents-popup{
-    position: absolute;
-    bottom: 15%;
-    display: flex;
-    flex-direction: column;
     &__text{
       font-weight: 400;
       font-size: 12px;
@@ -132,30 +128,16 @@
   }
   .documents-body{
     &__title{
+      font-size: 21px;
+      line-height: 25px;
       margin-bottom: 15px;
     }
     &__text{
-      max-height: 420px;
-      overflow: scroll;
-      font-weight: 500;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 140%;
-      letter-spacing: -0.02em;
-      color: $text;
-      margin-bottom: 10px;
     }
     &__button{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 11px 0;
-      background: #E1E2E2;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 130%;
-      letter-spacing: -0.02em;
-      color: $blue;
+      padding: 9px 0;
     }
   }
 }

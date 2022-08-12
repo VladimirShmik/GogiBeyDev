@@ -49,7 +49,7 @@
                         <p class="tariffs-body__text">При отключении подписки,
                             оставшиеся <span class="tariffs-body__bold">12 дней</span> по тарифу автоматически <span
                                     class="tariffs-body__bold">сгорают</span></p>
-                        <button class="tariffs-body__button" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                        <button class="tariffs-body__button" data-bs-toggle="modal" data-bs-target="#customModal4">
                             Сохранить подписку
                         </button>
                         <button class="change-block__cancel" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
@@ -74,7 +74,7 @@
                         <div class="tariffs-body__alert-text mb-4">Вы действительно хотите отключить подписку GoGiBey?
                         </div>
                         <button class="tariffs-body__button tariffs-body__button--red" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop3">Да, отключить
+                                data-bs-target="#customModal3">Да, отключить
                         </button>
                         <button class="change-block__cancel">Нет, сохранить
                         </button>
@@ -83,8 +83,8 @@
             </div>
         </div>
         <!-- unsubscribe-3 -->
-        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-             aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+        <div class="modal fade" id="customModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="customModal3" aria-hidden="true">
             <div class="modal-dialog modal-dialog-bottom">
                 <div class="modal-content tariffs-content">
                     <div class="modal-header tariffs-header">
@@ -98,15 +98,15 @@
                         </svg>
                         <div class="tariffs-body__alert-text">Подписка отключена</div>
                         <p class="tariffs-body__subtitle">Спасибо, что были с нами</p>
-                        <a class="tariffs-body__button" href="/">Продолжить
+                        <a class="tariffs-body__button modal-hide" id="customModalButton3" href="#">Продолжить
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- subscribe-1 -->
-        <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-             aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+        <div class="modal fade" id="customModal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="customModal4" aria-hidden="true">
             <div class="modal-dialog modal-dialog-bottom">
                 <div class="modal-content tariffs-content">
                     <div class="modal-header tariffs-header">
@@ -128,7 +128,7 @@
                         </div>
                         <div class="tariffs-body__alert-text">Подписка сохранена</div>
                         <p class="tariffs-body__subtitle">Спасибо, что остались с нами!</p>
-                        <a href="/" class="tariffs-body__button">Продолжить
+                        <a href="#" class="tariffs-body__button" id="customModalButton4">Продолжить
                         </a>
                     </div>
                 </div>
