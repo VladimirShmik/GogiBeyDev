@@ -64,9 +64,11 @@
   }
 }
 .accept-search{
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
-  linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
-
+  background:
+          linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+          linear-gradient(0deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72));
+  backdrop-filter: blur(7.48032px);
+  border: 2.67px solid #FFFFFF;
   border-radius: 30px;
   padding: 32px 34px;
   display: flex;
@@ -195,3 +197,108 @@
      }
    }
  }
+@media (min-width: 320px) and (max-width: 359px) {
+
+  .screen-wrap{
+    padding: 21.5px 16.5px;
+  }
+  .search-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    width: 80%;
+  }
+  .screen-block{
+    &__img{
+      margin-bottom: 15px;
+      max-width: fit-content;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  .screen-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__icon{
+      width: 15px;
+      height: 12px;
+      opacity: 0.25;
+      fill:  $text;
+      margin-right: 6.5px;
+    }
+    &__text{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 135%;
+      letter-spacing: -0.03em;
+      color: $text;
+      opacity: 0.25;
+
+    }
+  }
+  .screen-share{
+    background-color: transparent;
+    position: absolute;
+    top: 21px;
+    right: 15px;
+
+    &__icon{
+      width: 17px;
+      height: 19px;
+      fill: $text;
+      opacity: 0.25;
+    }
+  }
+  .accept-search{
+    &__text{
+      font-size: 17px;
+      line-height: 120%;
+    }
+    &__decline{
+      font-size: 12px;
+      line-height: 135%;
+    }
+    &__accept{
+      font-size: 12px;
+      line-height: 135%;
+    }
+  }
+  .twins-wrap{
+    &__title{
+      font-size: 16px;
+      line-height: 120%;
+    }
+  }
+  .twins-block{
+    padding: 9px;
+  }
+  .options-wrap{
+    width: calc( 320px - 1rem*2);
+  }
+  .options-box{
+    padding: 14px 21px;
+    margin-bottom: 35px;
+    &__title{
+      font-size: 17px;
+      line-height: 120%;
+    }
+  }
+  .options-block{
+    &__img{
+      width: 70px !important;
+      height: 70px !important;
+    }
+    &__title{
+      font-size: 10px;
+      line-height: 125%;
+    }
+    &--active{
+      .options-block__title{
+        font-size: 10px;
+        line-height: 125%;
+      }
+    }
+  }
+}

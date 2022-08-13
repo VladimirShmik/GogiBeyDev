@@ -17,6 +17,8 @@
    margin-bottom: 14px;
  }
   &__title{
+    font-size: 28px;
+    line-height: 130%;
     margin-bottom: 10px;
   }
   &__link{
@@ -115,4 +117,109 @@
     }
   }
 
+}
+@media (min-width: 320px) and (max-width: 359px){
+  .subs-block{
+    padding: 26px 17px 21px;
+    margin-bottom: 12px;
+    &__img{
+      width: 75px;
+      height: 75px;
+      margin-bottom: 12px;
+    }
+    &__title{
+      font-size: 25px;
+      line-height: 130%;
+      margin-bottom: 12px;
+    }
+    &__link{
+      padding: 8.5px 0;
+      font-size: 12px;
+      line-height: 140%;
+    }
+  }
+  .subs-status{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    padding: 3px 12px;
+    margin-bottom: 22px;
+    &__text{
+      font-weight: 500;
+      font-size: 13.4579px;
+      line-height: 140%;
+      letter-spacing: -0.03em;
+      color: $white;
+    }
+    &__img{
+      width: 16px;
+      height: 16px;
+    }
+    &--not-active{
+      background: #FF9F0A;
+
+    }
+    &--not-extend{
+      background: #AF1124;
+    }
+  }
+  .subs-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    &__item{
+      background: rgba(255, 255, 255, 0.72);
+      border-radius: 16px;
+      border: 2px solid #FFFFFF;
+      padding: 6.5px;
+    }
+  }
+  .subs-link{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 15px;
+    &__text{
+      font-weight: 500;
+      font-size: 13.4579px;
+      line-height: 140%;
+      letter-spacing: -0.03em;
+      color: $black;
+    }
+  }
+  .subs-icon{
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 122, 255, 0.9);
+    border-radius: 13.4579px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__icon{
+      fill: $white;
+      &--1{
+        width: 14px;
+        height: 17px;
+      }
+      &--2{
+        width: 17px;
+        height: 17px;
+      }
+      &--3{
+        width: 16px;
+        height: 17px;
+      }
+      &--4{
+        width: 14px;
+        height: 17px;
+      }
+      &--5{
+        width: 14px;
+        height: 17px;
+      }
+    }
+
+  }
 }

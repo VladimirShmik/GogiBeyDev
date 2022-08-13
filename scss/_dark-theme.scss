@@ -17,19 +17,20 @@
     }
 
     &--subs {
+      &::after {
+        background: #2D4F71;
+        opacity: 0.3;
+        filter: blur(67.2897px);
+      }
+
+      &::before {
+        background: #2D4F71;
+        opacity: 0.3;
+        filter: blur(67.2897px);
+      }
     }
 
-    &::after {
-      background: #2D4F71;
-      opacity: 0.3;
-      filter: blur(67.2897px);
-    }
 
-    &::before {
-      background: #2D4F71;
-      opacity: 0.3;
-      filter: blur(67.2897px);
-    }
   }
 
   .subs-block {
@@ -163,6 +164,10 @@
     &__cancel {
       color: #E0E0E0;
       opacity: 0.25;
+      &:hover{
+        color: #E0E0E0;
+        opacity: 0.25;
+      }
     }
   }
 
@@ -405,7 +410,7 @@
   .actors-wrapper {
     background: rgba(34, 34, 34, 0.82);
     backdrop-filter: blur(50px);
-    border: 3px solid rgba(34, 34, 34, 1);
+    border: 3px solid #222222;
 
     &__title {
       color: #E0E0E0;
@@ -430,13 +435,23 @@
       color: #E0E0E0;
     }
   }
-
+  .actors-bg{
+    &::after{
+      background: #3E4348;
+      opacity: 0.51;
+      filter: blur(67.2897px);
+    }
+    &::before{
+      background: #3E4348;
+      opacity: 0.51;
+      filter: blur(67.2897px);
+    }
+  }
   .similar-wrap {
     &__title {
       color: #E0E0E0;
     }
   }
-
   .actors-wrap {
     &__title {
       color: #E0E0E0;

@@ -65,6 +65,9 @@
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 10px;
+    &:hover{
+      color: #FFFFFF;
+    }
 
   }
 
@@ -78,6 +81,9 @@
     letter-spacing: -0.343178px;
     color: #0C2137;
     opacity: 0.25;
+    &:hover{
+      color: #0C2137;
+    }
   }
 }
 
@@ -120,6 +126,72 @@
     &--2 {
       width: 100px;
       height: 90px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 359px) {
+  .change-block {
+    padding: 32px 14px 25px;
+    &__img {
+      width: 38px;
+      height: 38px;
+    }
+
+    &__title {
+      font-size: 25px;
+      line-height: 31px;
+    }
+
+    &__span {
+      font-size: 25px;
+      line-height: 31px;
+    }
+
+    &__tariff {
+      font-size: 12px;
+      line-height: 140%;
+    }
+
+    &__bold {
+      font-size: 12px;
+      line-height: 140%;
+    }
+
+    &__edit {
+      font-size: 14px;
+      padding: 8px 0;
+
+
+    }
+
+    &__cancel {
+      font-size: 14px;
+      padding: 8px 0;
+    }
+  }
+
+  .change-line {
+    &__text {
+      font-size: 12px;
+      line-height: 140%;
+    }
+
+    &__date {
+      font-size: 12px;
+      line-height: 140%;
+    }
+  }
+
+  .icon-box {
+    &__icon {
+      fill: #007AFF;
+      width: 65px;
+      height: 80px;
+
+      &--2 {
+        width: 100px;
+        height: 80px;
+      }
     }
   }
 }

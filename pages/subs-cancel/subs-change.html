@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/././scss/bootstrap.min.css">
 <link rel="stylesheet" href="/././scss/swiper-bundle.css">
 <link rel="stylesheet" href="/././scss/main.css">
-<body>
+<body class="dark-theme">
 <main class="main">
     <div class="wrapper wrapper--bg--2">
         <div class="container">
@@ -52,7 +52,7 @@
                         <button class="tariffs-body__button" data-bs-toggle="modal" data-bs-target="#customModal4">
                             Сохранить подписку
                         </button>
-                        <button class="change-block__cancel" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                        <button class="change-block__cancel" data-bs-toggle="modal" data-bs-target="#customModal2">
                             Отключить
                         </button>
                     </div>
@@ -60,8 +60,8 @@
             </div>
         </div>
         <!-- unsubscribe-2 -->
-        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-             aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+        <div class="modal fade" id="customModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="customModal2" aria-hidden="true">
             <div class="modal-dialog modal-dialog-bottom">
                 <div class="modal-content tariffs-content">
                     <div class="modal-header tariffs-header">
@@ -76,8 +76,8 @@
                         <button class="tariffs-body__button tariffs-body__button--red" data-bs-toggle="modal"
                                 data-bs-target="#customModal3">Да, отключить
                         </button>
-                        <button class="change-block__cancel">Нет, сохранить
-                        </button>
+                        <a class="change-block__cancel" id="customModalButton2" href="#">Нет, сохранить
+                        </a>
                     </div>
                 </div>
             </div>
@@ -141,5 +141,25 @@
 <script src="/././js/swiper-bundle.min.js"></script>
 <script src="/././js/toastify.js"></script>
 <script src="/././js/index.js"></script>
+<script>
+    const modalContainer2 = document.getElementById("customModal2");
+    const modal2 = new bootstrap.Modal(modalContainer2);
+
+    document.getElementById("customModalButton2").addEventListener("click", function () {
+        modal2.hide();
+    });
+    const modalContainer3 = document.getElementById("customModal3");
+    const modal3 = new bootstrap.Modal(modalContainer3);
+
+    document.getElementById("customModalButton3").addEventListener("click", function () {
+    modal3.hide();
+    });
+    const modalContainer4 = document.getElementById("customModal4");
+    const modal4 = new bootstrap.Modal(modalContainer4);
+
+    document.getElementById("customModalButton4").addEventListener("click", function () {
+    modal4.hide();
+    });
+</script>
 </body>
 </html>
