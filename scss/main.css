@@ -4076,7 +4076,7 @@ h4 {
 }
 
 .reaction-item {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 0.747664px solid #E6EFFA;
   border-radius: 16px;
   display: grid;
@@ -4084,6 +4084,29 @@ h4 {
   grid-column-gap: 5px;
   padding: 3px 7px;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.reaction-item::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #417FC6;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.reaction-item:hover {
+  color: #FFFFFF;
+}
+.reaction-item:hover::after {
+  left: 0;
+  border-radius: 16px;
+  width: 100%;
 }
 .reaction-item__text {
   font-weight: 600;
@@ -4094,6 +4117,16 @@ h4 {
   width: 14px;
   height: 14px;
   object-fit: cover;
+}
+
+.reaction-item:hover > .reaction-item__text {
+  color: #FFFFFF;
+  transition: all 0.6s linear;
+}
+
+.reaction-item:hover > .reaction-item__img {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
 }
 
 @media (min-width: 320px) and (max-width: 359px) {
