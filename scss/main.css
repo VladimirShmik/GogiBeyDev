@@ -2695,6 +2695,7 @@ h4 {
   .documents-body__text {
     font-size: 12px;
     line-height: 140%;
+    max-height: 320px;
   }
   .documents-body__button {
     padding: 9px 0;
