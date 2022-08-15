@@ -1,5 +1,5 @@
 .main-container{
-  margin-top: 5px;
+  margin-top: 7px;
   margin-bottom: 30px;
   width: 100%;
   &__subtitle{
@@ -8,15 +8,32 @@
     line-height: 100%;
     color: #000000;
     opacity: 0.5;
-    margin-bottom: 10px;
+    margin-left: 21px;
+    margin-bottom: 3px;
+  }
+  &__hr{
+    width: 100%;
+    height: 1px;
+    margin: 0!important;
+    opacity: 1!important;
+    color: #F7F7F7!important;
   }
   .swiper-pagination-bullet{
     background: #0C2137;
     opacity: 0.1;
+    width: 5px;
+    height: 5px;
   }
   .swiper-pagination-bullet-active{
     background: #0C2137;
     opacity: 1;
+    width: 5px;
+    height: 5px;
+  }
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 14px;
+    left: 0;
+    width: 100%;
   }
 }
 .index-pseudo{
@@ -38,27 +55,28 @@
 .index-block{
   width: 70px;
   height: 70px;
+  margin-left: 4px;
+  margin-top: 9px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background: rgba(255, 255, 255, 0.72);
-  box-shadow: 1px 4px 9px rgba(12, 33, 55, 0.05);
   border-radius: 20px;
   position: relative;
   &__img{
     width: 37px;
     height: 37px;
+    margin-top: 7px;
     border-radius: 20px;
   }
   &__text{
     font-weight: 600;
     font-size: 10px;
     line-height: 130%;
-    letter-spacing: -0.02em;
     color: #0C2137;
     opacity: 0.5;
-    margin-top: 6px;
+    margin-top: 5px;
   }
   &__span{
     position: absolute;
@@ -73,8 +91,8 @@
     line-height: 130%;
     color: #FFFFFF;
     background: #D02929;
-    top: -3px;
-    right: -5px;
+    top: -2px;
+    right: -4px;
   }
 }
 .slider-container{
@@ -82,9 +100,9 @@
   backdrop-filter: blur(8.41536px);
   border-radius: 30px;
   padding: 20px 0 20px;
-  width: calc(360px - 1rem*2);
+  width: calc(360px - 9px*2);
   &--margin{
-    margin-top: 105px;
+    margin-top: 112px;
   }
   &__text{
     font-weight: 700;
@@ -92,7 +110,7 @@
     line-height: 120%;
     text-align: center;
     color: $text;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 .logo-block{
@@ -128,7 +146,7 @@
   width: 71px;
   height: 71px;
   display: block;
-  filter: drop-shadow(1px 4px 4px rgba(12, 33, 55, 0.3));
+  filter: drop-shadow(1px 4px 9px rgba(12, 33, 55, 0.3));
   border-radius: 20px;
   &__img{
     width: 100%;
@@ -183,7 +201,8 @@
 @media (min-width: 320px) and (max-width: 359px){
   .main-container{
     &__subtitle{
-      font-size: 9px;
+      font-size: 8px;
+      margin-left: 20px;
     }
     .swiper-pagination-bullet{
       width: 5px;
@@ -196,23 +215,36 @@
   .index-block{
     width: 62px;
     height: 62px;
+    margin-left: 0;
+    margin-top: 6px;
     &__img{
       width: 33px;
       height: 33px;
     }
     &__text{
       font-size: 9px;
-      margin-top: 5px;
+      margin-top: 4px;
+    }
+    &__span{
+      display: none;
+    }
+    &__img{
+      margin-top: 0px;
     }
   }
   .slider-wrapper{
-    padding: 20px 16px 20px;
+    padding: 16px 21px 20px;
+  }
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 16px;
+    left: 0;
+    width: 100%;
   }
   .slider-container{
     padding: 20px 0 20px;
-    width: calc(320px - 1rem*2);
+    width: calc(320px - 7px*2);
     &--margin{
-      margin-top: 105px;
+      margin-top: 100px;
     }
     &__text{
       font-size: 17px;
