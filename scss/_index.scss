@@ -100,10 +100,7 @@
   backdrop-filter: blur(8.41536px);
   border-radius: 30px;
   padding: 20px 0 20px;
-  width: calc(360px - 9px*2);
-  @media (min-width: 390px) and (max-width: 480px){
-    width: calc(390px - 9px*2);
-  }
+  width: calc(100vw - 9px*2);
   &--margin{
     margin-top: 112px;
   }
@@ -146,8 +143,8 @@
 }
 
 .slider-link{
-  width: 71px;
-  height: 71px;
+  width: 100%;
+  height: auto;
   display: block;
   filter: drop-shadow(1px 4px 9px rgba(12, 33, 55, 0.3));
   border-radius: 20px;
@@ -245,7 +242,7 @@
   }
   .slider-container{
     padding: 20px 0 20px;
-    width: calc(320px - 7px*2);
+    width: calc(100vw - 7px*2);
     &--margin{
       margin-top: 100px;
     }

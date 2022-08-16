@@ -8,13 +8,13 @@
   margin-left: auto;
   position: relative;
     @media (min-width: 360px) and (max-width: 389px){
-    max-width: 360px;
+    max-width: 100%;
   }
-  @media (min-width: 390px) and (max-width: 425px){
-    max-width: 390px;
+  @media (min-width: 390px) and (max-width: 480px){
+    max-width: 100%;
   }
   @media (min-width: 320px) and (max-width: 359px){
-    max-width: 320px;
+    max-width: 100%;
   }
 }
 .index-main{
