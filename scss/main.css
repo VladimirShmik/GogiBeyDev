@@ -1225,6 +1225,11 @@ h4 {
   padding: 20px 0 20px;
   width: 342px;
 }
+@media (min-width: 390px) and (max-width: 480px) {
+  .slider-container {
+    width: 372px;
+  }
+}
 .slider-container--margin {
   margin-top: 112px;
 }

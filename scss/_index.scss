@@ -101,6 +101,9 @@
   border-radius: 30px;
   padding: 20px 0 20px;
   width: calc(360px - 9px*2);
+  @media (min-width: 390px) and (max-width: 480px){
+    width: calc(390px - 9px*2);
+  }
   &--margin{
     margin-top: 112px;
   }
