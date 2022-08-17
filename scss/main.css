@@ -45,7 +45,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 1rem;
+  font-size: 100%;
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -1263,7 +1263,7 @@ h4 {
   }
   .slider-link__span {
     position: absolute;
-    width: 35px;
+    width: 55%;
     height: 28px;
     display: flex;
     align-items: baseline;
