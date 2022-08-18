@@ -424,7 +424,8 @@ p {
 
 .main {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -1099,7 +1100,6 @@ h4 {
 @media (min-width: 320px) {
   .main-container {
     margin-top: 0.675rem;
-    margin-bottom: 4.286em;
     width: 100%;
   }
   .main-container__subtitle {
@@ -1141,13 +1141,14 @@ h4 {
     grid-gap: 14px;
     padding: 0 7px;
     justify-items: center;
-    margin-top: 0.5rem;
+    margin-top: 6px;
     margin-bottom: 10px;
     min-height: 138px;
   }
 
   .profile-img {
-    padding: 0 8px;
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
 
@@ -1160,20 +1161,22 @@ h4 {
     justify-content: center;
     background: rgba(255, 255, 255, 0.72);
     border-radius: 20px;
-    padding: 6px 6px 10px;
+    padding: 2px 0px 7px;
     position: relative;
+    border: 2.67px solid #FFFFFF;
   }
   .index-block__img {
-    max-width: 100%;
-    width: 100%;
+    width: 34px;
+    height: 34px;
     border-radius: 20px;
+    object-fit: cover;
   }
   .index-block__text {
     font-weight: 600;
     font-size: 0.563rem;
     color: #0C2137;
     opacity: 0.5;
-    margin-top: 3px;
+    padding-top: 3px;
   }
   .index-block__span {
     position: absolute;
@@ -1181,14 +1184,14 @@ h4 {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: auto;
+    width: 18px;
+    height: 18px;
     font-weight: 600;
-    font-size: 0.688rem;
-    padding: 3.5px 6px;
+    font-size: 12px;
     color: #FFFFFF;
     background: #D02929;
-    top: -5px;
-    right: -4px;
+    top: -8px;
+    right: -6px;
   }
 
   .slider-container {
