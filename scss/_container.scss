@@ -29,33 +29,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    background-image: none;
-    &::before{
-      content: '';
-      position: absolute;
-      z-index: -1;
-      pointer-events: none;
-      width: 248px;
-      height: 317.33px;
-      left: -90.67px;
-      top: 16%;
-      background: #F3F4F4;
-      opacity: 0.7;
-      filter: blur(67.2897px);
-    }
-    &::after{
-      content: '';
-      position: absolute;
-      z-index: -1;
-      pointer-events: none;
-      width: 279px;
-      height: 279px;
-      left: 162px;
-      top: 36px;
-      background: #F3F4F4;
-      opacity: 0.7;
-      filter: blur(67.2897px);
-    }
+    background: linear-gradient(181.88deg, #FFFFFF 4.2%, rgba(255, 255, 255, 0) 14.65%), linear-gradient(155.04deg, #F3F4F4 19.3%, rgba(253, 253, 253, 0.648933) 79.48%, #FFFFFF 84.5%);
   }
   &--subs{
     width: 100%;
