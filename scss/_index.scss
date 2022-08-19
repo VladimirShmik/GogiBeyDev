@@ -55,6 +55,21 @@
     width: 100%;
     padding-top: 3px;
   }
+  .index-pseudo{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 248px;
+      height: 248px;
+      left: -58px;
+      top: 334px;
+      z-index: -1;
+      pointer-events: none;
+      background: #F3F4F4;
+      filter: blur(59.8131px);
+    }
+  }
   .index-block {
     width: 100%;
     height: fit-content;
