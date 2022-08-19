@@ -1,6 +1,5 @@
 @media (min-width: 320px) {
   .main-container {
-    margin-top: 0.675rem;
     width: 100%;
 
     &__subtitle {
@@ -54,6 +53,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-top: 3px;
   }
   .index-block {
     width: 100%;
@@ -62,12 +62,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.72);
+    border: double 2.67px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top , #FFFFFF,#FFFFFF00);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     border-radius: 20px;
-    padding: 2px 0px 7px;
     position: relative;
-    border: 2.67px solid #FFFFFF;
-
 
     &__img {
       width: 34px;
@@ -81,7 +82,9 @@
       font-size: 0.563rem;
       color: #0C2137;
       opacity: 0.5;
-      padding-top: 3px;
+      padding-top: 5.5px;
+      padding-bottom: 5.1px;
+
     }
 
     &__span {
@@ -101,11 +104,15 @@
     }
   }
   .slider-container {
-    background: rgba(255, 255, 255, 0.72);
+    background-color:rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(8.41536px);
     border-radius: 30px;
-    padding: 20px 0 20px;
     width: calc(100vw - 9px * 2);
+    position: relative;
+    border: double 2.67px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top , #FFFFFF,#FFFFFF00);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 
     &__text {
       font-weight: 700;
@@ -121,11 +128,13 @@
     justify-content: center;
     margin-bottom: 8px;
     padding-right: 8px;
+    margin-top: 20px;
 
     &__title {
       font-weight: 600;
       font-size: 0.688rem;
       color: #0C2137;
+
       text-transform: uppercase;
     }
 
@@ -142,6 +151,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 4px;
     padding: 1.25rem;
+    margin-bottom: 20px;
   }
 
   .slider-link {
