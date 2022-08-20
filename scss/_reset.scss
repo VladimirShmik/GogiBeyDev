@@ -43,7 +43,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
+  font-size: calc(16 * 100vw / 320);
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -52,7 +52,6 @@ body {
   box-sizing: border-box;
   font-family: 'SF Pro Display', sanf-serif, serif;
 }
-
 input,
 button,
 textarea {
