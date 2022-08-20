@@ -10,10 +10,10 @@
         background: #FFFFFF;
         width: fit-content;
         position: absolute;
-        padding: 0.25em 0.4375em;
+        padding: 0.25em 0.6375em;
         left: 0;
         top: 0.3125em;
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 0 1.25em 1.25em 0;
       }
 
 
@@ -104,12 +104,12 @@
     }
     .slider-container {
       background-color:rgba(255, 255, 255, 0.72);
-      backdrop-filter: blur(8.41536px);
+      backdrop-filter: blur(0.525em);
       border-radius: 1.875em;
       width: calc(100vw - 0.5625em * 2);
       position: relative;
       border: double 0.166875em transparent;
-      background-image: linear-gradient(white, white), radial-gradient(circle at top , #FFFFFF,#FFFFFF00);
+      background-image: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 100%)), radial-gradient(circle at top ,#FFFFFF, #FFFFFF00);
       background-origin: border-box;
       background-clip: content-box, border-box;
 
@@ -118,7 +118,7 @@
         font-size: 1.0625em;
         text-align: center;
         color: $text;
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
       }
     }
     .logo-block {
@@ -147,8 +147,9 @@
     .slider-wrapper {
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 0.25em;
+      grid-template-columns: repeat(4, minmax(3.275em, max-content));
+      grid-gap:  0.21875em;
+      grid-auto-flow: row;
       padding: 1em;
       margin-bottom: 1.25em;
     }
@@ -157,12 +158,12 @@
       width: 100%;
       height: auto;
       display: block;
-      filter: drop-shadow(1px 4px 9px rgba(12, 33, 55, 0.3));
       border-radius: 1.25em;
-
       &__img {
         width: 100%;
         border-radius: 1.25em;
+        filter: drop-shadow( 0.0625em  0.25em 0.5625em rgba(12, 33, 55, 0.3));
+
         object-fit: cover;
       }
 
@@ -190,7 +191,7 @@
 
       &__span {
         position: absolute;
-        width: 3.2em;
+        width: 55%;
         height: 2.55em;
         display: flex;
         align-items: baseline;
@@ -204,7 +205,7 @@
         margin: 0 auto;
         left: 0;
         right: 0;
-        border-radius: 10.0935px;
+        border-radius: 0.6875em;
 
         &--first {
           background: linear-gradient(315.87deg, #039CE2 1.48%, #242CF0 47.66%, #AD1CE3 72.67%, #E40B7F 100%);
@@ -220,3 +221,4 @@
       }
     }
 }
+
